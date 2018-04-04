@@ -1,0 +1,16 @@
+{
+  "name": "@chatopera/adapter-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@chatopera/adapter-client": "^1.0.1",
+    "debug": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "DEBUG=adapter* node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
