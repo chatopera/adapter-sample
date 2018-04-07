@@ -2,7 +2,7 @@
 
 ```
 npm install
-npm run start
+npm start
 ```
 
 更多信息，参考 index.js

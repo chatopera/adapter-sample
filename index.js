@@ -14,13 +14,12 @@ let waitfor = async(ms) => {
 // main function
 async function main() {
     let client = new Client("qunpin", "p07fc2dpo63runomllyc57hm"); // 创建客户端实例
-    await client.open("ws://47.104.19.187:8020"); // 连接
-    client.on("message", (data) => {    // 监听下行消息
-        // {"openId":"uid","msg":"清明节"}, 发送给openId的消息，msg是消息文字。
+    await client.open("ws://localhost:8020");
+    client.on("message", (data)=>{
+        // on message: {"openId":"uid","msg":"清明节"}
         debug("on message: %j", data)
-    });
-    
-    client.send("openId", "nickName", "message"); // 上行消息
+    })
+    client.send("gmis_department_1", "uid", "jim", "怎么开通微信");
 }
 
 // on main entry
